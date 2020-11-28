@@ -14,7 +14,7 @@ class ProductController extends Controller
 						->limit(4)					
 						->get();
 
-		return view('ban-banh.ban-banh',array(
+		return view('ban-banh.index',array(
 			'new_products' => $new_products,
 		));
 	}
