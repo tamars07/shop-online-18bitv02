@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\ProductType;
 
 class ProductController extends Controller
 {
@@ -27,5 +28,15 @@ class ProductController extends Controller
 		foreach ($products as $key => $value) {
 			echo $key . ' - ' . $value->name . '<br>';
 		}
+    }
+
+    public function getProductByType($id){
+    	$products = Product::where('id_type',$id)->get();
+    	$type = ProductType::all();
+
+    	return view('ban-banh.product-by-type',array(
+    		'products' => $products,
+    		'type' => $type
+    	));
     }
 }

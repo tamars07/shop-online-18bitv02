@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 //route cua trang ban dien thoai
 Route::get('/','ProductController@index');
 
-Route::get('/login', function(){
-	return view('ban-banh.login');
-});
+Route::get('/dang-nhap','UserController@signin');
+Route::get('/dang-ki','UserController@signup');
+
+Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
 
 
 
