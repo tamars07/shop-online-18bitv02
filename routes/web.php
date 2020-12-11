@@ -22,6 +22,8 @@ Route::get('/dang-ki','UserController@signup');
 
 Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
 
+//day la noi dung da duoc chinh sua tai branch tam.tran
+
 
 
 
