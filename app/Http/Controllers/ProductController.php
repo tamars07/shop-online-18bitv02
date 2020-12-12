@@ -40,7 +40,7 @@ class ProductController extends Controller
 	}
 	public function getProductDetail($id){
 		$product = Product::find($id);
-
+		///show 
 		if($product){
 			return view('ban-banh.product-detail', array(
 				'product' => $product,
