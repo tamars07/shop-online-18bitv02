@@ -39,4 +39,24 @@ class ProductController extends Controller
     		'type' => $type
     	));
     }
+    
+    public function getProductDetail($id_product){
+
+        $product = Product::find($id_product);
+
+        if($product){
+
+            return view('ban-banh.product_detail',array(
+
+                'product' => $product
+
+            ));
+
+        }else{
+
+            return redirect()->back();
+
+        }
+
+    }
 }

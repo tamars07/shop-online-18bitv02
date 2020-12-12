@@ -22,9 +22,10 @@ Route::get('/dang-ki','UserController@signup');
 
 Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
 
+ 
+Route::get('/product/{id_product}', 'ProductController@getProductDetail');
 
-
-
+Route::get('/chi-tiet/{id}', 'ProductController@getProductDetail');
 
 
 
