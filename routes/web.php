@@ -16,14 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 //route cua trang ban dien thoai
 Route::get('/','ProductController@index');
-
-
-
-
-
-
-
-
-
-
-
+//route login
+Route::get('/dang-nhap','UserController@signin');
+//route signup
+Route::get('/dang-ki','UserController@signup');
+//route san pham
+Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
+//route chi tiet san pham
+Route::get('/chi-tiet/{id}','ProductController@getProductDetail');
