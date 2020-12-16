@@ -25,7 +25,7 @@ Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
 Route::get('/chi-tiet/{id}', 'ProductController@getProductDetail');
 
 
-
+// da chinh sua tai nhanh hoang.huynh
 
 
 
