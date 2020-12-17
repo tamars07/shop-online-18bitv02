@@ -21,6 +21,7 @@ Route::get('/dang-nhap','UserController@signin');
 Route::get('/dang-ki','UserController@signup');
 
 Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
+Route::get('/chi-tiet/{id}','ProductController@getProductDetail');
 
 
 
