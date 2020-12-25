@@ -24,6 +24,9 @@ Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
 
 Route::get('/chi-tiet/{id}', 'ProductController@getProductDetail');
 
+//routes admin LTE
+Route::get('/admin', 'AdminController@index');
+
 
 
 
