@@ -26,6 +26,9 @@ Route::get('/chi-tiet/{id}', 'ProductController@getProductDetail');
 
 //routes admin LTE
 Route::get('/admin', 'AdminController@index');
+Route::get('/admin/products', 'AdminController@getProducts');
+Route::get('/admin/add-product', 'AdminController@addProduct');
+Route::post('/admin/add-product', 'AdminController@postAddProduct');
 
 
 
