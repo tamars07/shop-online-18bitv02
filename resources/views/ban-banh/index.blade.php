@@ -1,6 +1,8 @@
 @extends('layouts.front-end.master')
-
 @section('content')
+
+
+
 <div id="content" class="space-top-none">
 	<div class="main-content">
 		<div class="space60">&nbsp;</div>
@@ -207,4 +209,5 @@
 
 	</div> <!-- .main-content -->
 </div> <!-- #content -->
+
 @endsection

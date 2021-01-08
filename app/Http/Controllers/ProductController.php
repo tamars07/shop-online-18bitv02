@@ -48,7 +48,7 @@ class ProductController extends Controller
 
             return view('ban-banh.product_detail',array(
 
-                'product' => $product
+                'product' => $product,
 
             ));
 
