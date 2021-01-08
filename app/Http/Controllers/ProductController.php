@@ -12,12 +12,10 @@ class ProductController extends Controller
 	public function index(){
 		$new_products = Product::where('new',1)
 						->orderBy('created_at','desc')
-						->limit(4)					
-						->get();
+						->paginate(4);
+        $sanpham_km=Product::where('promotion_price','<>',0)->paginate(8);
+        return view ('ban-banh.index',compact('new_products','sanpham_km'));
 
-		return view('ban-banh.index',array(
-			'new_products' => $new_products,
-		));
 	}
 
     public function getAllProducts(){
