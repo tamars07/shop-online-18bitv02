@@ -3,7 +3,7 @@
 @section('content')
 <div id="content">
 			<div class="our-history">
-				<h2 class="text-center wow fadeInDown">Our History</h2>
+				<h2 class="text-center wow fadeInDown">Lịch sử của chúng tôi</h2>
 				<div class="space35">&nbsp;</div>
 
 				<div class="history-slider">

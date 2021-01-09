@@ -19,6 +19,7 @@ Route::get('/','ProductController@index');
 
 Route::get('/loai-san-pham/{id}','ProductController@getProductByType');
 
+
 Route::get('/chi-tiet/{id}', 'ProductController@getProductDetail');
 //đăng nhập
 Route::get('/dang-nhap','UserController@signin');
@@ -46,6 +47,7 @@ Route::get('/admin/users', 'AdminController@getUsers');
 Route::get('/admin/add-user', 'AdminController@addUser');
 
 Route::post('/admin/add-user', 'AdminController@postAddUser');
+
 
 
 

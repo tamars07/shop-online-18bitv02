@@ -20,5 +20,6 @@ class PageController extends Controller
 		return view('ban-banh.index');
 		// return view ('ban-banh.idex',compact('slide'));
 	}
+	
     
 }

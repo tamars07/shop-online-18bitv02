@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Slide;
 use App\Product;
 use App\ProductType;
 
@@ -14,6 +15,7 @@ class ProductController extends Controller
 						->orderBy('created_at','desc')
 						->paginate(4);
         $sanpham_km=Product::where('promotion_price','<>',0)->paginate(8);
+       
         return view ('ban-banh.index',compact('new_products','sanpham_km'));
 
 	}
@@ -37,6 +39,7 @@ class ProductController extends Controller
     		'type' => $type
     	));
     }
+
 
     public function getProductDetail($id){
     	$product = Product::find($id);
